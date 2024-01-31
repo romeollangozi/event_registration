@@ -17,18 +17,3 @@ COPY . .
 RUN npm run build
 
 CMD ["npm", "run", "preview"]
-
-# # Use a smaller image for serving the static files
-# FROM nginx:alpine
-
-# # Set the working directory to /usr/share/nginx/html
-# WORKDIR /usr/share/nginx/html
-
-# # Copy the build output from the previous stage
-# COPY --from=build /client/dist .
-
-# # Expose port 80 to the outer world
-# EXPOSE 3001
-
-# # Command to run the application
-# CMD ["nginx", "-g", "daemon off;"]

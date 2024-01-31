@@ -13,7 +13,7 @@ PORT = process.env.API_PORT;
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ credentials: true, origin: "http://localhost:3001" }));
+app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 
 app.use("/api", userRoute);
 app.use("/api", authRoute);
