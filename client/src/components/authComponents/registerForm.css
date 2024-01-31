@@ -1,0 +1,14 @@
+.registerFormContainer {
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    display:block;
+    margin-bottom: 500px;
+}
