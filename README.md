@@ -1,23 +1,33 @@
-# EVENT REGISTRATION PLATFORM
+# Event Registration Platform
+
+## Project Description
 
 The Event Registration Platform is a web application that facilitates event creation, management, and registration. Users can create and organize events, while attendees can register for events they are interested in. The platform also features an admin dashboard for overseeing all events and users.
 
-## Main features
+## Technology Stack
 
-1. Event Listing:
-React frontend to display events retrieved from the Node.js backend based on the logged-in user or admin.
+- React
+- Node.js
+- Express
+- MySQL
 
-1. Event Creation:
-React frontend form for event organizers to add new events, saved to the database with the organizer's ID as a reference.
+## How to Run the Project
 
-1. Event Editing:
-React frontend form to edit event details and update database records.
+To run the project using `docker-compose`, follow these steps:
 
-1. Event Deletion:
-React frontend button to delete events from the database.
+1. Clone the repository:
 
-1. User Registration for Events:
-React frontend form to allow users to register for events.
+   ```bash
+   git clone https://github.com/romeollangozi/event-registration.git
 
-1. Admin Dashboard:
-React frontend with additional admin privileges to manage all events and users.
+2. Navigate to the root directory of the project
+   ```bash
+   cd event_registration
+
+3. Build and run the project with docker-compose:
+   ```bash
+   docker-compose up --build
+
+4. Access the application:
+  - Frontend: [http://localhost:3000](http://localhost:3000)
+  - Backend: [http://localhost:8080](http://localhost:8080)
