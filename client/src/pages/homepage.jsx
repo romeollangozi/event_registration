@@ -42,7 +42,6 @@ const HomePage = () => {
         <Container>
           <Box
             sx={{
-              resize: "horizontal",
               overflow: "hidden",
               width: "1000px",
               height: "auto",
