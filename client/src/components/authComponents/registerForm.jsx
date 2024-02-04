@@ -15,7 +15,7 @@ import Copyright from "./copyright.jsx";
 import { Link, useNavigate } from "react-router-dom";
 import registerHook from "../../hooks/registerHook.js";
 import { toast } from "react-hot-toast";
-// TODO remove, this demo shouldn't need to reset the theme.
+
 
 const defaultTheme = createTheme();
 const RegisterForm = () => {

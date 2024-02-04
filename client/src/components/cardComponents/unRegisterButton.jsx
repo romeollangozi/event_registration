@@ -2,7 +2,6 @@ import { useMutation } from "@tanstack/react-query";
 import React from "react";
 import unAttendHook from "../../hooks/unAttendHook";
 import { Button } from "@mui/material";
-import toast from "react-hot-toast";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 
 const UnRegisterButton = ({ id }) => {

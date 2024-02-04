@@ -1,15 +1,10 @@
 import {
   Typography,
-  Box,
-  IconButton,
   Chip,
-  Divider,
   List,
   ListItem,
-  ListItemButton,
   ListItemText,
 } from "@mui/material";
-import ClearOutlinedIcon from "@mui/icons-material/ClearOutlined";
 import useRemoveAttendee from "../../hooks/removeAttendeeHook";
 
 const AttendeeList = ({ attendees, eventId }) => {

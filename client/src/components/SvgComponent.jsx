@@ -7,7 +7,7 @@ const SvgComponent = (props) => (
     preserveAspectRatio="xMidYMid meet"
     {...props}
   >
-    <path fill="#fff" d="M0 0h2000v1500H0z" />
+    <path fill="#ffffff" d="M0 0h2000v1500H0z" />
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -53,7 +53,7 @@ const SvgComponent = (props) => (
                 <svg
                   width={395.52}
                   height={122.557}
-                  data-palette-color="#969ca6"
+                  data-palette-color="#1857be"
                   viewBox="1.1 -38.05 171.83 53.25"
                   {...props}
                 >

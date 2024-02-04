@@ -43,7 +43,7 @@ const HomePage = () => {
           <Box
             sx={{
               overflow: "hidden",
-              width: "1000px",
+              maxWidth: "1000px",
               height: "auto",
             }}
           >

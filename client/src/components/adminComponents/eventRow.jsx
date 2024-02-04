@@ -2,7 +2,6 @@ import { TableRow, TableCell, Chip } from "@mui/material";
 import useDeleteEventHook from "../../hooks/adminDeleteEventHook";
 import { useState } from "react";
 import DialogModal from "../dialogModal";
-import { Rowing } from "@mui/icons-material";
 
 const EventRow = ({ event }) => {
   const deleteEventMutation = useDeleteEventHook();
