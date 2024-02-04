@@ -65,7 +65,7 @@ const EventCard = ({
     setAttendeesExpanded(!attendeesExpanded);
   };
   return (
-    <Card>
+    <Card sx={{ height: "100%" }}>
       <CardMedia component="img" height="140" image={eventPicture} />
       <CardContent>
         <Typography variant="h5" component="div">
@@ -129,27 +129,26 @@ const EventCard = ({
         )}
         {cardType === "view" ? (
           <Typography color="textSecondary" gutterBottom>
-            Organizer: {organizer.firstName}, {organizer.lastName}
+            Organizer: {organizer.firstName} {organizer.lastName}
           </Typography>
         ) : (
           <></>
         )}
-        <CardActions sx={{ justifyContent: "space-around" }}>
-          {cardType === "view" ? (
-            <RegisterButton id={id} eventName={eventName} />
-          ) : cardType === "user" || cardType == "admin" ? (
-            <DeleteButton id={id} />
-          ) : (
-            <></>
-          )}
-          {cardType === "user" ? (
-            <EditButton openModal={openEditModal} />
-          ) : (
-            <div></div>
-          )}
-          {cardType === "attendee" ? <UnRegisterButton id={id} /> : <></>}
-        </CardActions>
       </CardContent>
+      <CardActions
+        sx={{ justifyContent: "space-evenly", mb: 0 }}
+        disableSpacing
+      >
+        {cardType === "view" ? (
+          <RegisterButton id={id} eventName={eventName} />
+        ) : cardType === "user" || cardType == "admin" ? (
+          <DeleteButton id={id} />
+        ) : (
+          <></>
+        )}
+        {cardType === "user" ? <EditButton openModal={openEditModal} /> : <></>}
+        {cardType === "attendee" ? <UnRegisterButton id={id} /> : <></>}
+      </CardActions>
       <EditEventModal
         open={isEditModalOpen}
         onClose={closeEditModal}
