@@ -36,4 +36,4 @@ To run the project using `docker-compose`, follow these steps:
 
 The website is now hosted in Vercel
 
-[event-registration-ten.vercel.app](event-registration-ten.vercel.app)
+[event-registration-ten.vercel.app](https://event-registration-ten.vercel.app/)
