@@ -3,7 +3,7 @@ const SvgComponent = (props) => (
     xmlns="http://www.w3.org/2000/svg"
     width="100%"
     height={200}
-    viewBox="100 -150 972 600"
+    viewBox="50 -150 972 600"
     preserveAspectRatio="xMidYMid meet"
     {...props}
   >
@@ -11,7 +11,7 @@ const SvgComponent = (props) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width={2000}
+      width={1500}
       height={570}
       data-background-color="#ffffff"
       transform="matrix(.75 0 0 .75 249.09 535.894)"

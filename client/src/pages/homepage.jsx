@@ -40,15 +40,10 @@ const HomePage = () => {
     return (
       <>
         <Container>
-          <Box
-            sx={{
-              overflow: "hidden",
-              maxWidth: "1000px",
-              height: "auto",
-            }}
+          <Container fluid
           >
             <SvgComponent />
-          </Box>
+          </Container>
           <SearchBar
             searchQuery={searchQuery}
             setSearchQuery={setSearchQuery}

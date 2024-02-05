@@ -14,6 +14,7 @@ const UnRegisterButton = ({ id }) => {
       color="grey"
       size="small"
       startIcon={<HighlightOffIcon />}
+      disabled={unAttendMutation.isPending}
       onClick={() => unAttendMutation.mutate(id)}
     >
       Unregister

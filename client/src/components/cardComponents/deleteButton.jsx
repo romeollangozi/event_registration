@@ -32,10 +32,16 @@ const DeleteButton = ({ id }) => {
         size="small"
         startIcon={<HighlightOffIcon />}
         onClick={handleClickOpen}
+        disabled={deleteCardMutation.isPending}
       >
         Delete
       </Button>
-      <DialogModal mutation={deleteCardMutation} open={openModal} handleClose={handleClose} id={id} />
+      <DialogModal
+        mutation={deleteCardMutation}
+        open={openModal}
+        handleClose={handleClose}
+        id={id}
+      />
     </>
   );
 };
