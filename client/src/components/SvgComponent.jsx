@@ -3,7 +3,7 @@ const SvgComponent = (props) => (
     xmlns="http://www.w3.org/2000/svg"
     width="100%"
     height={200}
-    viewBox="50 -150 972 600"
+    viewBox="0 -150 972 600"
     preserveAspectRatio="xMidYMid meet"
     {...props}
   >

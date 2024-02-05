@@ -67,6 +67,7 @@ const UserRow = (props) => {
         <TableCell align="left" disabled>
           <Chip
             label="Delete"
+            disabled={deleteUserMutation.isPending}
             onClick={handleClickOpen}
           ></Chip>
         </TableCell>
