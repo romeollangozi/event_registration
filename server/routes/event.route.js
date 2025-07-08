@@ -12,7 +12,7 @@ const {
 const {authMiddleware} = require("../middleware/authMiddleware.js");
 
 const eventRoute = express.Router();
-console.log("Event route");
+
 eventRoute.get("/allEvents/:page/:id?", getAllEvents);
 eventRoute.post("/addParticipant", authMiddleware, addParticipant);
 eventRoute.get("/userEvents", authMiddleware, getUserOrganizedEvents);
