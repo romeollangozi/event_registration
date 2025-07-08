@@ -10,7 +10,7 @@ const { adminMiddleware } = require("../middleware/adminMiddleware.js");
 const userRoute = express.Router();
 
 userRoute.get("/user/:id", getUserById);
-console.log("bERTI")
+console.log("BERTI")
 userRoute.get("/logout", logout);
 userRoute.delete("/unattend/:id", authMiddleware, unattend);
 module.exports = userRoute;
